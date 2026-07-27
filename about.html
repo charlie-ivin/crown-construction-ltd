@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us — Crown Construction (Home Counties) Ltd</title>
+<meta name="description" content="Crown Construction (Home Counties) Ltd has been building extensions, renovations and new homes across Bedfordshire and Buckinghamshire since 2003.">
+<link rel="icon" href="images/logo.png">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="brand">
+      <img src="images/logo.png" alt="Crown Construction (Home Counties) Ltd logo">
+      <span class="brand-word">Crown Construction<span>(Home Counties) Ltd</span></span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span></button>
+    <nav class="main-nav">
+      <a href="index.html" data-page="index.html">Home</a>
+      <a href="gallery.html" data-page="gallery.html">Our work</a>
+      <a href="about.html" data-page="about.html">About</a>
+      <a href="contact.html" data-page="contact.html">Contact</a>
+      <a href="contact.html" class="cta">Get a quote</a>
+    </nav>
+  </div>
+</header>
+
+<div class="page-header">
+  <div class="container">
+    <p class="eyebrow" data-bind="about.eyebrow">About Crown Construction</p>
+    <h1 data-bind="about.heading">Two decades of building across the Home Counties</h1>
+    <p data-bind="about.intro">Crown Construction (Home Counties) Ltd was founded in Cheddington, near Leighton Buzzard, in 2003.</p>
+  </div>
+</div>
+
+<section>
+  <div class="container" style="max-width:760px;">
+    <div id="about-story"></div>
+  </div>
+</section>
+
+<section class="bg-raised">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">How we work</p>
+      <h2>What you can expect from us</h2>
+    </div>
+    <div class="reasons" id="values-list"></div>
+  </div>
+</section>
+
+<section class="cta-band">
+  <div class="container center">
+    <h2>Want to talk through a project?</h2>
+    <p>Get in touch and we'll arrange a site visit and a written quote.</p>
+    <div class="hero-actions" style="justify-content:center;">
+      <a href="contact.html" class="btn btn-dark">Get a quote</a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer" id="site-footer"></footer>
+
+<script src="js/main.js"></script>
+<script src="js/footer.js"></script>
+<script>
+document.addEventListener('crown:content-ready', function (e) {
+  var about = e.detail.about || {};
+  var story = document.getElementById('about-story');
+  if (story && about.story) {
+    story.innerHTML = about.story.map(function (p) { return '<p>' + p + '</p>'; }).join('');
+  }
+  var values = document.getElementById('values-list');
+  if (values && about.values) {
+    values.innerHTML = about.values.map(function (v, i) {
+      return '<div class="reason"><div class="mark">' + String(i + 1).padStart(2, '0') + '</div><div><h4>' + v.title + '</h4><p>' + v.description + '</p></div></div>';
+    }).join('');
+  }
+});
+</script>
+</body>
+</html>

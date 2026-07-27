@@ -1,0 +1,167 @@
+{
+  "site": {
+    "name": "Crown Construction (Home Counties) Ltd",
+    "shortName": "Crown Construction",
+    "tagline": "Extensions, renovations and new builds across Bedfordshire & Buckinghamshire",
+    "phone": "07792 393246",
+    "phoneHref": "+447792393246",
+    "email": "info@crownconstructionltd.co.uk",
+    "address": "1 Goodwins Mead, Cheddington, Leighton Buzzard, LU7 0RZ",
+    "companyNumber": "12345678",
+    "areas": ["Leighton Buzzard", "Cheddington", "Tring", "Dunstable", "Aylesbury", "Milton Keynes", "Bedfordshire & Buckinghamshire"],
+    "hours": "Mon–Fri, 9am–5pm",
+    "social": {
+      "facebook": "",
+      "instagram": ""
+    },
+    "formspreeId": "YOUR_FORM_ID"
+  },
+  "hero": {
+    "eyebrow": "Est. 2003 — Home Counties builders",
+    "heading": "Built properly, the first time",
+    "lede": "Crown Construction plans, manages and builds extensions, loft conversions, renovations and new homes across Bedfordshire, Buckinghamshire and the surrounding villages — from first sketch to final sign-off.",
+    "ctaPrimary": "Get a quote",
+    "ctaSecondary": "See our work",
+    "stats": [
+      { "label": "Trading since", "value": "2003" },
+      { "label": "Projects completed", "value": "260+" },
+      { "label": "Areas covered", "value": "Beds · Bucks" }
+    ]
+  },
+  "services": [
+    {
+      "num": "01",
+      "title": "Extensions",
+      "description": "Single and double-storey extensions designed to work with your existing home, not against it — from planning through to plastering."
+    },
+    {
+      "num": "02",
+      "title": "Loft conversions",
+      "description": "Dormer, hip-to-gable and mansard conversions that turn dead roof space into a room you'll actually use."
+    },
+    {
+      "num": "03",
+      "title": "Renovations",
+      "description": "Whole-house refurbishments and period-property renovations, handled with respect for the building's age and fabric."
+    },
+    {
+      "num": "04",
+      "title": "New builds",
+      "description": "Bespoke new-build homes and self-build support, from groundworks and structure through to final finish."
+    },
+    {
+      "num": "05",
+      "title": "Kitchens & bathrooms",
+      "description": "Structural alterations, plumbing, tiling and fit-out for kitchens and bathrooms that need to last."
+    },
+    {
+      "num": "06",
+      "title": "Project management",
+      "description": "One point of contact for the whole job — trades, timelines, building control and building materials, all coordinated by us."
+    }
+  ],
+  "whyUs": [
+    {
+      "title": "Local, and around after the job",
+      "description": "Based in Cheddington and working the same Bedfordshire and Buckinghamshire patch for over twenty years — we're easy to find if you need us."
+    },
+    {
+      "title": "Fixed, written quotes",
+      "description": "No verbal estimates. Every job gets a detailed, itemised quote before work starts, so there are no surprises on the final invoice."
+    },
+    {
+      "title": "Fully insured and accredited",
+      "description": "Public liability cover, FMB membership and a track record of passing building control first time."
+    },
+    {
+      "title": "One team, start to finish",
+      "description": "Our own core trades, not a rotating cast of subcontractors — the person who quotes the job is the person who runs it."
+    }
+  ],
+  "testimonials": [
+    {
+      "quote": "Crown built our rear extension over the winter and kept to both the price and the programme. Communication was excellent throughout.",
+      "author": "Sarah H.",
+      "location": "Leighton Buzzard"
+    },
+    {
+      "quote": "We'd tried two other builders before Crown who never turned up on site. This was a completely different experience — tidy, punctual, and the finish was spot on.",
+      "author": "Michael D.",
+      "location": "Aylesbury"
+    },
+    {
+      "quote": "Full loft conversion done in eight weeks, exactly as quoted. Would use them again without a second thought.",
+      "author": "Priya K.",
+      "location": "Tring"
+    }
+  ],
+  "projects": [
+    {
+      "id": "p1",
+      "title": "Rear extension & kitchen",
+      "category": "Extensions",
+      "location": "Cheddington, Buckinghamshire",
+      "description": "A single-storey rear extension opening the kitchen onto the garden, with bi-fold doors and underfloor heating.",
+      "image": "images/gallery/placeholder-1.svg"
+    },
+    {
+      "id": "p2",
+      "title": "Dormer loft conversion",
+      "category": "Loft conversions",
+      "location": "Leighton Buzzard, Bedfordshire",
+      "description": "Full dormer conversion adding a fourth bedroom and en-suite, with new staircase and structural steelwork.",
+      "image": "images/gallery/placeholder-2.svg"
+    },
+    {
+      "id": "p3",
+      "title": "Period cottage renovation",
+      "category": "Renovations",
+      "location": "Tring, Hertfordshire",
+      "description": "Sympathetic whole-house renovation of a Victorian cottage — rewire, replaster and restored original features.",
+      "image": "images/gallery/placeholder-3.svg"
+    },
+    {
+      "id": "p4",
+      "title": "Self-build family home",
+      "category": "New builds",
+      "location": "Aylesbury, Buckinghamshire",
+      "description": "A four-bedroom new-build on a garden plot, managed from groundworks through to handover.",
+      "image": "images/gallery/placeholder-4.svg"
+    },
+    {
+      "id": "p5",
+      "title": "Double-storey side extension",
+      "category": "Extensions",
+      "location": "Dunstable, Bedfordshire",
+      "description": "Side return extension adding a ground-floor study and a principal bedroom with dressing room above.",
+      "image": "images/gallery/placeholder-5.svg"
+    },
+    {
+      "id": "p6",
+      "title": "Family bathroom refit",
+      "category": "Kitchens & bathrooms",
+      "location": "Milton Keynes, Buckinghamshire",
+      "description": "Full strip-out and refit including replumbing, underfloor heating and bespoke tiling.",
+      "image": "images/gallery/placeholder-6.svg"
+    }
+  ],
+  "about": {
+    "eyebrow": "About Crown Construction",
+    "heading": "Two decades of building across Bedfordshire & Buckinghamshire",
+    "intro": "Crown Construction (Home Counties) Ltd was founded in Cheddington, near Leighton Buzzard, in 2003. What started as a small team of joiners and bricklayers has grown into a full building contractor working extensions, renovations and new builds right across Bedfordshire, Buckinghamshire and the surrounding villages — without ever losing the habits that got us the first job: turning up on time, quoting honestly, and finishing what we start.",
+    "story": [
+      "We still run every project with our own core trades rather than handing it off to whoever is free that month. The estimator who visits your home is usually the same person who manages the build.",
+      "Most of our work now comes from recommendations and repeat clients — people who used us for an extension and came back years later for a loft conversion or a full renovation."
+    ],
+    "values": [
+      { "title": "Honesty in the quote", "description": "If something will cost more once we open up the walls, you hear about it immediately — not on the final invoice." },
+      { "title": "Respect for the site", "description": "Your home is a building site for us, but it's still your home. We keep it as tidy and quiet as the job allows." },
+      { "title": "Building control, done properly", "description": "Every structural job is designed and signed off correctly — no shortcuts that come back to haunt a future sale." }
+    ]
+  },
+  "contact": {
+    "eyebrow": "Get in touch",
+    "heading": "Tell us about your project",
+    "lede": "Send a few details about the work you're planning and we'll come back to you within one working day to arrange a site visit and a written quote."
+  }
+}
