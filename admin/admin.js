@@ -80,10 +80,10 @@
     root.innerHTML = '';
     const card = el(`
       <div class="admin-card">
-        <h2>Connect to GitHub</h2>
+        <h2>Login To The Web Editor</h2>
         <p class="help">
-          This admin panel edits <code>data/content.json</code> and gallery photos, then publishes by
-          committing straight to your GitHub repo. GitHub Pages rebuilds the live site automatically,
+          This admin panel edits the websites content then publishes by
+          committing straight to the GitHub server. GitHub rebuilds the live site automatically,
           usually within a minute.
         </p>
         ${errorMsg ? `<p class="help" style="color:var(--brick);">${errorMsg}</p>` : ''}
