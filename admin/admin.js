@@ -18,6 +18,12 @@
     dirty: false
   };
 
+  // This admin panel is wired to one specific repo — update these three
+  // if the site ever moves to a different GitHub username, repo, or branch.
+  const REPO_OWNER = 'charlie-ivin';
+  const REPO_NAME = 'crown-construction-ltd';
+  const REPO_BRANCH = 'main';
+
   const root = document.getElementById('admin-root');
   const headerActions = document.getElementById('admin-header-actions');
 
@@ -82,46 +88,31 @@
         </p>
         ${errorMsg ? `<p class="help" style="color:var(--brick);">${errorMsg}</p>` : ''}
         <div class="admin-field field">
-          <label for="cfg-owner">GitHub username / organisation</label>
-          <input id="cfg-owner" placeholder="e.g. crown-construction">
-        </div>
-        <div class="admin-field field">
-          <label for="cfg-repo">Repository name</label>
-          <input id="cfg-repo" placeholder="e.g. crownconstructionltd.co.uk">
-        </div>
-        <div class="admin-field field">
-          <label for="cfg-branch">Branch</label>
-          <input id="cfg-branch" value="main">
-        </div>
-        <div class="admin-field field">
           <label for="cfg-token">Personal access token</label>
           <input id="cfg-token" type="password" placeholder="github_pat_...">
         </div>
         <p class="help">
           Use a <strong>fine-grained</strong> token (GitHub &rarr; Settings &rarr; Developer settings &rarr;
-          Personal access tokens) scoped to only this repository, with <strong>Contents: Read and write</strong>
-          permission. It's stored only in this browser, never anywhere else. Use the <em>Log out</em> button
-          on a shared computer to remove it.
+          Personal access tokens) scoped to only the <code>${REPO_OWNER}/${REPO_NAME}</code> repository, with
+          <strong>Contents: Read and write</strong> permission. It's stored only in this browser, never
+          anywhere else. Use the <em>Log out</em> button on a shared computer to remove it.
         </p>
         <button class="btn btn-primary" id="cfg-connect" style="width:100%;justify-content:center;">Connect &amp; load site content</button>
       </div>
     `);
     root.appendChild(card);
     if (prefill) {
-      card.querySelector('#cfg-owner').value = prefill.owner || '';
-      card.querySelector('#cfg-repo').value = prefill.repo || '';
-      card.querySelector('#cfg-branch').value = prefill.branch || 'main';
       card.querySelector('#cfg-token').value = prefill.token || '';
     }
     card.querySelector('#cfg-connect').addEventListener('click', () => {
       const cfg = {
-        owner: card.querySelector('#cfg-owner').value.trim(),
-        repo: card.querySelector('#cfg-repo').value.trim(),
-        branch: card.querySelector('#cfg-branch').value.trim() || 'main',
+        owner: REPO_OWNER,
+        repo: REPO_NAME,
+        branch: REPO_BRANCH,
         token: card.querySelector('#cfg-token').value.trim()
       };
-      if (!cfg.owner || !cfg.repo || !cfg.token) {
-        renderLogin(cfg, 'Please fill in your username, repository name and token.');
+      if (!cfg.token) {
+        renderLogin(cfg, 'Please enter your personal access token.');
         return;
       }
       state.config = cfg;
