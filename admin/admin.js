@@ -92,7 +92,7 @@
           <input id="cfg-token" type="password" placeholder="github_pat_...">
         </div>
         <p class="help">
-          Website Login By Charlie Ivin | For help contact: web.help@charlieivin.co.uk
+          Website By Charlie Ivin | For help contact: web.help@charlieivin.co.uk
         </p>
         <button class="btn btn-primary" id="cfg-connect" style="width:100%;justify-content:center;">Connect &amp; load site content</button>
       </div>
