@@ -589,15 +589,19 @@ button:focus-visible, a:focus-visible {
 .btn-charlie {
   display: inline-block;
   padding: 6px 16px;
-  color: #ffffff;                  /* White text */
-  border: 1px solid #ffffff;       /* White border outline */
-  border-radius: 20px;             /* Fully rounded corners (pill shape) */
+  color: #ffffff;                      /* White text */
+  background-color: transparent;       /* Transparent background */
+  border: 1px solid rgba(255, 255, 255, 0.8); /* Subtle white border */
+  border-radius: 20px;                 /* Rounded corners */
   text-decoration: none;
   font-size: 0.85rem;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .btn-charlie:hover {
-  background-color: #ffffff;      /* Inverts color on hover */
-  color: #000000;                  /* Black text on hover */
+  color: #ffffff;                      /* Keeps text white */
+  border-color: #ffffff;               /* Brightens border */
+  /* Creates a soft faint white glow around the box */
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.4), 
+              0 0 20px rgba(255, 255, 255, 0.2);
 }
