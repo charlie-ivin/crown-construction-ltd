@@ -40,7 +40,7 @@
         </div>
         <div class="footer-bottom">
           <span>&copy; <span id="year"></span> ${s.name}. All rights reserved.</span>
-          <a href="https://portfolio.charlieivin.co.uk" target="_blank" rel="noopener noreferrer" class="btn-charlie">Built by Charlie Ivin</a>
+          <a href="https://portfolio.charlieivin.co.uk" target="_blank" rel="noopener noreferrer" class="btn-charlie">Website Built by Charlie Ivin</a>
           <a href="admin/index.html">Site admin</a>
         </div>
       </div>
