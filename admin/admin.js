@@ -92,10 +92,7 @@
           <input id="cfg-token" type="password" placeholder="github_pat_...">
         </div>
         <p class="help">
-          Use a <strong>fine-grained</strong> token (GitHub &rarr; Settings &rarr; Developer settings &rarr;
-          Personal access tokens) scoped to only the <code>${REPO_OWNER}/${REPO_NAME}</code> repository, with
-          <strong>Contents: Read and write</strong> permission. It's stored only in this browser, never
-          anywhere else. Use the <em>Log out</em> button on a shared computer to remove it.
+          Website Login By Charlie Ivin | http://portfolio.charlieivin.co.uk/
         </p>
         <button class="btn btn-primary" id="cfg-connect" style="width:100%;justify-content:center;">Connect &amp; load site content</button>
       </div>
